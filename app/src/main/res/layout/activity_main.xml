@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:contentDescription="Multiple books in a bookstore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bookstore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKWORMERS"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are a community of readers who love to sell and share our love for books. Come join us!"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 456 789"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/white"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookwormers@dummydomain.com"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5, We Love Books Avenue, 1st Floor"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_orange_light"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
